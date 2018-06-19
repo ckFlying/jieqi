@@ -11,9 +11,11 @@
     <modules>
         <module>db</module>
         <module>core</module>
+        <module>shiro</module>
     </modules>
     <properties>
         <wwj.ckflying.db.version>1.0-SNAPSHOT</wwj.ckflying.db.version>
+        <wwj.ckflying.shiro.version>1.0-SNAPSHOT</wwj.ckflying.shiro.version>
     </properties>
     <dependencies>
         <dependency>
