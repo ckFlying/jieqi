@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="281d3478-1aae-4511-a5c4-a17e7c89d31e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/shiro/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/shiro/MyShiroRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/shiro/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/target/classes/Config/JieQiTestDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/target/classes/Config/JieQiTestDataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="281d3478-1aae-4511-a5c4-a17e7c89d31e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -57,11 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCon.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestCon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
               <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyShiroRealm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shiro/src/main/java/shiro/MyShiroRealm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -289,7 +290,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -369,7 +370,7 @@
       <option name="presentableId" value="Default" />
       <updated>1529047574773</updated>
       <workItem from="1529047578556" duration="7654000" />
-      <workItem from="1529370464569" duration="20964000" />
+      <workItem from="1529370464569" duration="21350000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1529392662090</created>
@@ -378,14 +379,22 @@
       <option name="project" value="LOCAL" />
       <updated>1529392662090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加了shiro">
+      <created>1529402843383</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1529402843383</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28618000" />
+    <option name="totallyTimeSpent" value="29004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -429,7 +438,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="增加了shiro" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了shiro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,20 +817,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shiro/src/main/java/shiro/MyShiroRealm.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        <state relative-caret-position="395">
+          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java">
+    <entry file="file://$PROJECT_DIR$/shiro/src/main/java/shiro/MyShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="243">
+          <caret line="42" column="31" lean-forward="true" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -904,7 +914,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
