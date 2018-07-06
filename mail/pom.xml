@@ -9,25 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>wwj.ckflying</groupId>
-    <artifactId>db</artifactId>
-    <version>${wwj.ckflying.db.version}</version>
+    <artifactId>mail</artifactId>
+    <version>${wwj.ckflying.mail.version}</version>
     <dependencies>
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
+            <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
     </dependencies>
-
 </project>

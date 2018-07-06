@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import service.TestService;
 
+import javax.jms.Queue;
+
 /**
  * create by wjwang on ${date}
  */
