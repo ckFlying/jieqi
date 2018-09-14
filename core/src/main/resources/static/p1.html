@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的项目</title>
+    <link href="themes/gray/easyui.css" rel="stylesheet"/>
+    <link href="themes/icon.css" rel="stylesheet"/>
+    <link href="themes/gray/skin_body.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+</head>
+<body>
+<div class="easyui-layout">
+    <div data-options="region:'north'" class="layout-top">
+        <div class="layout-line"></div>
+    </div>
+    <div data-options="region:'south'" class="layout-bottom">
+        <div class="layout-line"></div>
+    </div>
+    <div data-options="region:'west',iconCls:'icon-reload',split:true,border: false,animate: true" class="layout-left easyui-accordion">
+        <div title="便捷">
+            <ul class="tree-ul">
+                <li>
+                <div class="tree-div">
+                    <span>参数名称</span>
+                </div>
+                </li>
+                <li>
+                    <div class="tree-div">
+                        <span>接口名称</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div title="工具">
+            <ul class="tree-ul">
+                <li>
+                    <div class="tree-div">
+                        <span>参数名称</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="tree-div">
+                        <span>接口名称</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div title="" iconCls="icon-reload" selected style="padding:10px;"></div>
+    </div>
+    <div data-options="region:'center'" class="layout-right">
+    </div>
+</div>
+</body>
+</html>

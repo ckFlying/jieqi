@@ -1,0 +1,44 @@
+html,body{
+    width:100%;
+    height:100%;
+    background: #fff;
+    margin: 0px;
+}
+.easyui-layout{
+    width:100%;
+    height:100%;
+}
+.easyui-layout .layout-top,.layout-bottom{
+    height:9%;
+}
+.easyui-layout .layout-left{
+    height:82%;
+    width:10%;
+}
+.easyui-layout .layout-right{
+    height:90%;
+}
+
+.easyui-layout .layout-left{}
+.easyui-layout .layout-line{
+    border-top:1px solid #ededed;
+    height: 1px;
+}
+.tree-expanded,.tree-expanded-hover,.tree-collapsed,.tree-collapsed-hove{
+    background: none;
+}
+.tree-ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+.tree-ul li{
+    white-space: nowrap;
+}
+.tree-ul .tree-div{
+    height: 38px;
+    line-height: 38px;
+}
+.tree-div:hover{
+    background: #ededed;
+}
