@@ -26,6 +26,9 @@
         <wwj.ckflying.shiro.version>1.0-SNAPSHOT</wwj.ckflying.shiro.version>
         <wwj.ckflying.mail.version>1.0-SNAPSHOT</wwj.ckflying.mail.version>
         <wwj.ckflying.server.version>1.0-SNAPSHOT</wwj.ckflying.server.version>
+        <velocity.version>1.7</velocity.version>
+        <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
+        <mybatis-plus.version>2.3</mybatis-plus.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -33,6 +36,16 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>1.3.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatisplus-spring-boot-starter</artifactId>
+                <version>${mybatisplus-spring-boot-starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
@@ -69,12 +82,51 @@
                 <artifactId>activemq-client</artifactId>
                 <version>5.13.2</version>
             </dependency>
+            <!--!:目前试了只有这个版本可以识别chi_sim即中文，其它版本报错-->
+            <dependency>
+                <groupId>net.sourceforge.tess4j</groupId>
+                <artifactId>tess4j</artifactId>
+                <version>3.4.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.jna</groupId>
+                        <artifactId>jna</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna</artifactId>
+                <version>4.1.0</version>
+            </dependency>
+            <!--:!-->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>${velocity.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+        </dependency>
+        <!-- 日志 Log4j2 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
     </dependencies>
 </project>
