@@ -1,17 +1,21 @@
 package service;
 
 import com.baomidou.mybatisplus.generator.AutoGenerator;
+import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.po.TableFill;
+import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import entity.Diary;
 import entity.Operation;
 import entity.Result;
 import entity.TableData;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Method;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -93,6 +97,13 @@ public class DbService {
                 result.setCode(404);
                 result.setStatus("mysql NOT FOUND");
         } else {
+            List<FileOutConfig> focList = new ArrayList<FileOutConfig>();
+            focList.add(new FileOutConfig("/templates/controller.vm") {
+                @Override
+                public String outputFile(TableInfo tableInfo) {
+                    return "E:\\db\\generator\\controller\\" + tableInfo.getEntityName() + "Controller.java";
+                }
+            });
             // 代码生成器
             AutoGenerator mpg = new AutoGenerator().setGlobalConfig(
                     // 全局配置
@@ -152,12 +163,30 @@ public class DbService {
                                     .setController("controller")// 这里是控制器包名，默认 web
                                     .setXml("service.mapper.xml").setMapper("service.mapper").setEntity("service.model").setService("service").setServiceImpl("service.impl")
 
-                    );
-
+                    ).setCfg(new InjectionConfig() {
+                        @Override
+                        public void initMap() {
+                        }
+                    }.setFileOutConfigList(focList)).setTemplate(new TemplateConfig().setController(null));
             // 执行生成
             mpg.execute();
             result.setCode(200);
         }
         return result;
+    }
+    public static void InvokeToFile(Object object){
+        Class<?> cls=object.getClass();
+        Method[] methods = cls.getMethods();
+        for (Method method : methods) {
+            // 得到成员变量的类型的类类型
+            if(method.getName().contains("get") && !"getClass".equals(method.getName()) ){
+                System.out.println(method.getName());
+
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        InvokeToFile(new Diary());
     }
 }
