@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 
+import javax.servlet.Filter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -74,7 +75,7 @@ public class ShiroConfig {
     }
 
     @Bean
-    public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
+    public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         System.out.println("ShiroConfiguration.shirFilter()");
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager);
@@ -88,14 +89,10 @@ public class ShiroConfig {
         //<!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
         filterChainDefinitionMap.put("/login", "anon");
         filterChainDefinitionMap.put("/**","authc");
-        // 登录成功后要跳转的链接
-//        shiroFilterFactoryBean.setSuccessUrl("/success");
-
-        shiroFilterFactoryBean.setLoginUrl("/unauth");
-        //未授权界面;
-        shiroFilterFactoryBean.setUnauthorizedUrl("/unauhc");
-
+        Map<String, Filter> filters = shiroFilterFactoryBean.getFilters();
+        filters.put("authc",new AuthenticationFilter());
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
+        shiroFilterFactoryBean.setFilters(filters);
         return shiroFilterFactoryBean;
     }
 
