@@ -25,8 +25,6 @@ import java.util.Collection;
  * create by wjwang on ${date}
  */
 public class MyShiroRealm extends AuthorizingRealm {
-    @Autowired
-    private RedisSessionDAO redisSessionDAO;
     //授权
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {

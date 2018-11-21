@@ -26,7 +26,7 @@ public class TestCon extends BaseController {
     @Autowired
     private DbService dbService;
     @PostMapping("get")
-    @RequiresRoles("admin:find")
+    @RequiresAuthentication
     public ResultMsg get(@RequestParam String url,@RequestParam String userName,@RequestParam String pwd,@RequestParam String outDir){
         List<TableData> tableDatas= dbService.getSqlInfo(url,userName,pwd);
         Page<TableData> pages=new Page<>();

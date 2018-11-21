@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MyWebAppConfigurer implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        System.out.println("wadas");
+        System.out.println("addInterceptors");
         registry.addInterceptor(new MyHandlerInterceptor()).addPathPatterns("/**");
     }
 }

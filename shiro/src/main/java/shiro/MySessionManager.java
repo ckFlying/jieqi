@@ -20,6 +20,7 @@ public class MySessionManager extends DefaultWebSessionManager {
 
     @Override
     protected Serializable getSessionId(ServletRequest request, ServletResponse response) {
+        System.out.println("getSessionId");
         String id=WebUtils.toHttp(request).getHeader(AUTHORIZATION);
         if(!StringUtils.isEmpty(id)){
             request.setAttribute(ShiroHttpServletRequest.REFERENCED_SESSION_ID_SOURCE,REFERENCED_SESSION_ID_SOURCE);
@@ -31,4 +32,5 @@ public class MySessionManager extends DefaultWebSessionManager {
             return super.getSessionId(request, response);
         }
     }
+
 }

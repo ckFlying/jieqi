@@ -22,10 +22,10 @@ public class MyHandlerInterceptor implements HandlerInterceptor {
 
 
         String method= httpServletRequest.getMethod();
-        System.out.println("wdad"+method);
+        System.out.println("preHandle");
         if (method.equals("OPTIONS")){
             httpServletResponse.setStatus(200);
-            return true;
+            return false;
         }
 
         return true;

@@ -16,20 +16,19 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * create by wjwang on 2018/11/19
  */
-@Log4j2
 public class AuthenticationFilter extends FormAuthenticationFilter {
     @Override
     protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
         HttpServletResponse httpResp = WebUtils.toHttp(response);
         HttpServletRequest httpReq = WebUtils.toHttp(request);
-        log.debug("Shiro: onAccessDenied");
+        System.out.println("onAccessDenied");
         /**系统重定向会默认把请求头清空，这里通过拦截器重新设置请求头，解决跨域问题*/
         httpResp.addHeader("Access-Control-Allow-Origin", httpReq.getHeader("Origin"));
         httpResp.addHeader("Access-Control-Allow-Headers", "*");
         httpResp.addHeader("Access-Control-Allow-Methods", "*");
         httpResp.addHeader("Access-Control-Allow-Credentials", "true");
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("returnCode", 401);
+        jsonObject.put("returnCode", 4013212);
         jsonObject.put("returnMsg", "权限不足");
         WebUtils.toHttp(response).getWriter().println(jsonObject);
         return false;
@@ -37,25 +36,20 @@ public class AuthenticationFilter extends FormAuthenticationFilter {
 
     @Override
     protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
-        log.debug("Shiro: isAccessAllowed");
+        System.out.println("Shiro: isAccessAllowed");
         if (request instanceof HttpServletRequest) {
             if (((HttpServletRequest) request).getMethod().toUpperCase().equals("OPTIONS")) {
                 return true;
             }
         }
-        return super.isAccessAllowed(request, response, mappedValue);
+        return true;
     }
 
     @Override
-    protected boolean isLoginSubmission(ServletRequest request, ServletResponse response) {
-        log.debug("Shiro: isLoginSubmission");
-        return super.isLoginSubmission(request, response);
-    }
+    protected boolean executeLogin(ServletRequest request, ServletResponse response) throws Exception {
+        System.out.println("executeLogin");
 
-    @Override
-    protected boolean isLoginRequest(ServletRequest request, ServletResponse response) {
-        log.debug("Shiro: isLoginRequest");
-        return super.isLoginRequest(request, response);
+        return super.executeLogin(request, response);
     }
 
     @Bean
