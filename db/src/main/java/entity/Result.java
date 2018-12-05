@@ -22,4 +22,8 @@ public class Result {
     public void setCode(int code) {
         this.code = code;
     }
+    public void setResult(int code,String status){
+        this.status=status;
+        this.code=code;
+    }
 }

@@ -1,14 +1,11 @@
 package ckflying.jieqi.core.Controller;
 
-import Config.DataSource;
-import Config.JieQiTestDataBase;
 import ckflying.jieqi.core.Basic.BaseController;
 import ckflying.jieqi.core.Basic.Page;
 import ckflying.jieqi.core.Basic.ResultMsg;
 import entity.Result;
 import entity.TableData;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -40,7 +37,7 @@ public class TestCon extends BaseController {
         resultMsg.setStatus("SUCCESS");
         return resultMsg;
     }
-    @GetMapping("generator")
+    @PostMapping("generator")
     @RequiresRoles("admin:generator")
     public Result generator(@RequestParam String url, @RequestParam String userName, @RequestParam String pwd, @RequestParam String outDir){
 

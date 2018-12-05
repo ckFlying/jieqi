@@ -1,4 +1,4 @@
-package Config;
+package config;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

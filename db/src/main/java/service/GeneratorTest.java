@@ -9,6 +9,6 @@ public class GeneratorTest {
         dbService.Generator("jdbc:mysql://localhost:3306/jieqi?useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;rewriteBatchedStatements=true",
                 "root",
         "123456",
-        "E:\\", new String[]{"diary"});
+        "E:\\", new String[]{"user"});
     }
 }

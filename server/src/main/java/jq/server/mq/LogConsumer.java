@@ -1,4 +1,4 @@
-package mq;
+package jq.server.mq;
 
 import org.springframework.stereotype.Component;
 //import org.springframework.jms.annotation.JmsListener;

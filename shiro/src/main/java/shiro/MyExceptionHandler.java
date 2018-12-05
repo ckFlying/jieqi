@@ -28,7 +28,7 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
             attributes.put("msg", "用户无权限");
         } else {
             attributes.put("code", "1000003");
-            attributes.put("msg", ex.getMessage());
+            attributes.put("msg", ex.getMessage()+","+ex.getCause());
         }
 
         fastJsonJsonView.setAttributesMap(attributes);

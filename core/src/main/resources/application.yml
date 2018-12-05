@@ -10,3 +10,6 @@ server:
 #    in-memory: true
 #    pool:
 #      enabled: false
+shiro:
+  anon:
+    url: /static/**

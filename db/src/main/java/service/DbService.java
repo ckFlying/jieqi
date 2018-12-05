@@ -9,7 +9,6 @@ import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import entity.Diary;
 import entity.Operation;
 import entity.Result;
 import entity.TableData;
@@ -146,7 +145,7 @@ public class DbService {
                                     // .setSuperControllerClass("com.baomidou.demo.TestController")
                                     // 【实体】是否生成字段常量（默认 false）
                                     // public static final String ID = "test_id";
-                                    .setEntityColumnConstant(true)
+                                    .setEntityColumnConstant(false)
                                     // 【实体】是否为构建者模型（默认 false）
                                     // public User setName(String name) {this.name = name; return this;}
                                     .setEntityBuilderModel(true)
@@ -154,7 +153,7 @@ public class DbService {
                                     .setEntityLombokModel(true)
                             // Boolean类型字段是否移除is前缀处理
                             // .setEntityBooleanColumnRemoveIsPrefix(true)
-                            // .setRestControllerStyle(true)
+                             .setRestControllerStyle(true)
                             // .setControllerMappingHyphenStyle(true)
                     ).setPackageInfo(
                             // 包配置
@@ -184,9 +183,5 @@ public class DbService {
 
             }
         }
-    }
-
-    public static void main(String[] args) {
-        InvokeToFile(new Diary());
     }
 }

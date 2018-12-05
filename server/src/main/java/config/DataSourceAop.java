@@ -1,4 +1,4 @@
-package Config;
+package config;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -20,7 +20,7 @@ public class DataSourceAop {
         DataSourceContextHolder.setDS(dataSource.name());
         System.out.println(dataSource.name());
     }
-    @After("@annotation(DataSource)")
+    @After("@annotation(config.DataSource)")
     public void after(JoinPoint point){
         DataSourceContextHolder.clearDS();
     }

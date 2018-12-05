@@ -1,4 +1,4 @@
-package mq;
+package jq.server.mq;
 
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.context.annotation.Bean;

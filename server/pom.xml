@@ -32,5 +32,10 @@
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>wwj.ckflying</groupId>
+            <artifactId>db</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

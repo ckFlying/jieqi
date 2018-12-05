@@ -1,4 +1,4 @@
-package mq;
+package jq.server.mq;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
