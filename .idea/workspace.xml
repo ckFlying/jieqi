@@ -1,125 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="281d3478-1aae-4511-a5c4-a17e7c89d31e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mail/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail/src/main/java/mail/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mail/src/main/java/mail/MailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/mq/LogConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/mq/LogProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/mq/QueueConfig.java" afterDir="false" />
+    <list default="true" id="281d3478-1aae-4511-a5c4-a17e7c89d31e" name="Default" comment="增加了shiro">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/biz/XjOrderBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/enums/OrderEventEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/enums/OrderStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/enums/StateMachineNameEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/DefaultStateBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyGuard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyMessageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachineBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachineListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderGuardBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderMessageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderStateBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderStateMachineBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/ckflying/jieqi/core/CoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/ckflying/jieqi/core/CoreApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/db/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro/src/main/java/shiro/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro/src/main/java/shiro/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/JsoupUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/SaveThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/ThreadExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/entity/CrawlInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jieqi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/config/DataSourceAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/config/DataSourceAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/config/JieQiTestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/config/JieQiTestDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/jq/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/jq/server/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/jq/server/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/jq/server/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro/target/classes/shiro/MyShiroRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/shiro/target/classes/shiro/MyShiroRealm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shiro/target/classes/shiro/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/shiro/target/classes/shiro/ShiroConfig.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/core/target/" />
-    <ignored path="$PROJECT_DIR$/db/target/" />
-    <ignored path="$PROJECT_DIR$/shiro/target/" />
-    <ignored path="$PROJECT_DIR$/mail/target/" />
-    <ignored path="$PROJECT_DIR$/mq/target/" />
-    <ignored path="$PROJECT_DIR$/server/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CoreApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueueConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/mq/QueueConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#134#135#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/TestCon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/mq/LogProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogConsumer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/mq/LogConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -189,12 +119,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -220,6 +146,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectId" id="2fGr7llooQSOzJwgnktWcOZVdnH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -330,20 +257,31 @@
       <pane id="AndroidView" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mq" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -361,21 +299,12 @@
       <recent name="shiro" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.CoreApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.CoreApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="CoreApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
@@ -385,76 +314,47 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ckflying.jieqi.core" />
       <option name="MAIN_CLASS_NAME" value="ckflying.jieqi.core.CoreApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="mq" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="core" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ckflying.jieqi.core.CoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.CoreApplication" />
       <item itemvalue="JUnit.CoreApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.CoreApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -462,6 +362,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -480,6 +381,7 @@
       <workItem from="1530846494971" duration="11773000" />
       <workItem from="1530869104999" duration="791000" />
       <workItem from="1530869904044" duration="2214000" />
+      <workItem from="1713438091901" duration="26962000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1529392662090</created>
@@ -572,10 +474,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -584,7 +494,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/statemachine/spring-statemachine-core/4.0.0/spring-statemachine-core-4.0.0.jar!/org/springframework/statemachine/ObjectStateMachine.class</url>
+          <line>16</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">

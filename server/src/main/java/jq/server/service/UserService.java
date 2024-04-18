@@ -13,6 +13,6 @@ import jq.server.entities.User;
  * @author ckFlying
  * @since 2018-11-27
  */
-public interface UserService extends IService<User> {
+public interface UserService {
     Result register(User user);
 }

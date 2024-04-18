@@ -22,10 +22,10 @@ import javax.annotation.Resource;
  * @since 2018-11-27
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+public class UserServiceImpl implements UserService {
 
-    @Resource
-    private UserMapper userMapper;
+//    @Resource
+//    private UserMapper userMapper;
 
     @Override
     public Result register(User user) {
@@ -35,7 +35,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             user.setId(IDUtil.getKey());
             user.setStatus("未激活");
             user.setIsok(false);
-            userMapper.insert(user);
+//            userMapper.insert(user);
             result.setResult(ResultEnum.RESULT_ENUM_10001.code(),ResultEnum.RESULT_ENUM_10001.msg());
         }
         else{

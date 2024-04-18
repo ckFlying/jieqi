@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
-@ComponentScan({"ckflying.jieqi.core.Controller", "config","jq.server.service.impl","shiro","mail","controller","service"})
+@ComponentScan({"ckflying.jieqi.core.*", "config","jq.server.service.impl","shiro","mail","controller","service"})
 public class CoreApplication {
 
     public static void main(String[] args) {
