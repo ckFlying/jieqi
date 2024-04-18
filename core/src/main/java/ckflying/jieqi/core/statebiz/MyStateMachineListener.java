@@ -30,7 +30,9 @@ public class MyStateMachineListener<S, E, O> extends StateMachineListenerAdapter
 
     @Override
     public void eventNotAccepted(Message<E> event) {
-        eventNotAccepted(getMessage());
+        ParameterizedType superClass = (ParameterizedType) getClass().getGenericSuperclass();
+        Class<O> type = (Class<O>) superClass.getActualTypeArguments()[2];
+        eventNotAccepted((O) event.getHeaders().get(type.getName()));
     }
 
     public void eventNotAccepted(O o) {

@@ -5,40 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="281d3478-1aae-4511-a5c4-a17e7c89d31e" name="Default" comment="增加了shiro">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/Controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/biz/XjOrderBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/enums/OrderEventEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/enums/OrderStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/enums/StateMachineNameEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/DefaultStateBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyGuard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyMessageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachineBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachineListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderGuardBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderMessageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderStateBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/OrderStateMachineBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStaUt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/CoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/FileUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/JsoupUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/SaveThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/base/ThreadExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawl/src/main/java/wwj/ckflying/crawl/entity/CrawlInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jieqi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/config/DataSourceAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/config/DataSourceAop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/config/JieQiTestDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/config/JieQiTestDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/jq/server/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/jq/server/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/jq/server/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/jq/server/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro/target/classes/shiro/MyShiroRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/shiro/target/classes/shiro/MyShiroRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro/target/classes/shiro/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/shiro/target/classes/shiro/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachineListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/ckflying/jieqi/core/statebiz/MyStateMachineListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +351,7 @@
       <workItem from="1530846494971" duration="11773000" />
       <workItem from="1530869104999" duration="791000" />
       <workItem from="1530869904044" duration="2214000" />
-      <workItem from="1713438091901" duration="26962000" />
+      <workItem from="1713438091901" duration="28936000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1529392662090</created>
@@ -397,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529402843383</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加了shiro">
+      <created>1713468827465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713468827465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -499,6 +476,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/statemachine/spring-statemachine-core/4.0.0/spring-statemachine-core-4.0.0.jar!/org/springframework/statemachine/ObjectStateMachine.class</url>
           <line>16</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/statemachine/spring-statemachine-core/2.1.3.RELEASE/spring-statemachine-core-2.1.3.RELEASE.jar!/org/springframework/statemachine/support/AbstractStateMachine.class</url>
+          <line>1004</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
